@@ -18,6 +18,7 @@
 </head>
 <body>
     <div class="frist-page">
+      <!-- Header -->
         <div class="header fs-3 ">
             <nav
                 class="navbar navbar-expand-sm navbar-dark p-3 bg-success">
@@ -52,8 +53,8 @@
                                 >Dropdown</a
                             >
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
+                                <a class="dropdown-item" href="#">About</a>
+                                <a class="dropdown-item" href="#">Contact</a>
                             </div>
                         </li>
                     </ul>
@@ -77,6 +78,7 @@
                 opacity: 0.8;   
             }
         </style>
+  <!-- Poforlio -->
     
         <div class="title text-center">
             <h1 class="text-center text-bg-primary text-uppercase mt-4">PORTFOLIO</h1>
@@ -175,6 +177,7 @@
           </div>
         
     </div>
+    <!-- About -->
     <div class="second-page bg-success text-white p-3">
         <div class="title text-center mt-4">
             <h1 class="text-center text-bg-primary text-uppercase ">about</h1>
@@ -184,11 +187,38 @@
         <div class="container">
             <div class="row m-5">
                 <div class="col-sm fs-3">
-                    <p class="">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                  <p class="text-center">
+                    <a
+                      class="btn btn-primary"
+                      data-bs-toggle="collapse"
+                      href="#contentId"
+                      aria-expanded="false"
+                      aria-controls="contentId"
+                    >
+                      Content1
+                    </a>
+                  </p>
+                  <div class="collapse" id="contentId"><p class="">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                  </div>
+                  
                 </div>
                 <div class="col-sm fs-3">
-                    <p class="custom-class">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                  <p class="text-center">
+                    <a
+                      class="btn btn-primary"
+                      data-bs-toggle="collapse"
+                      href="#contentId2"
+                      aria-expanded="false"
+                      aria-controls="contentId2"
+                    >
+                      Content2
+                    </a>
+                  </p>
+                  <div class="collapse" id="contentId2"><p class="">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                  </div>
+                  
                 </div>
+                
             </div>
             <div class="row m-5 justify-content-center " style="height: 50px;">
 
@@ -199,10 +229,75 @@
            
         </div>
         
-    
+    <div class="img-slide">
+      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="First slide"
+          ></li>
+          <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="1"
+            aria-label="Second slide"
+          ></li>
+          <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="2"
+            aria-label="Third slide"
+          ></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img
+              src="/img/will do 1.jpg"
+              class="w-50 d-block" style="margin-left: 300px;"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/will do 2.png"
+              class="w-50 d-block" style="margin-left: 300px;"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/signup.jpg"
+              class="w-50 d-block" style="margin-left: 300px;"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselId"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselId"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+    </div>
     
         
     </div>
+    <!-- Contact -->
     <div class="third page">
         <div class="title text-center mt-4">
             <h1 class="text-center text-bg-primary text-uppercase ">contact</h1>
@@ -235,6 +330,7 @@
         
     </div>
 </div>
+<!-- footer -->
 <div class="footer w-100">
     <!-- Remove the container if you want to extend the Footer to full width. -->
 <div class=" mt-5 w-100">
